@@ -5,3 +5,5 @@ This repo contains the pc-hardware-catalog-database data model design along with
 
 > [!NOTE]
 > I am thinking about limiting the scope of this database to thorougly describe the motherboard including supported CPUs, supported memory, and expansion slots. This may also mean breaking out the top level enities of brand, abstract_entity, and pc_component into a shared database (perhaps its own microservice) that can be referenced from other databases/services. I will have to think about this.
+
+![image of model diagram](pc-hardware-catalog-model.png)
