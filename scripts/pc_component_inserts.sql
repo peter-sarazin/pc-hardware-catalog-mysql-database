@@ -68,7 +68,10 @@ insert into pc_component (pc_component_id, brand_id, name, model_number, release
 values (23, 1, 'LGA 1150', 'LGA1150', 2013, null, null);
 
 insert into pc_component (pc_component_id, brand_id, name, model_number, release_date_year, release_date_month, release_date_day) 
-values (24, 1, 'LGA 1151', 'LGA1151', 2015, 9, 1);
+values (24, 1, 'LGA 2011-3', 'LGA2011-3', 2014, 8, null);
 
 insert into pc_component (pc_component_id, brand_id, name, model_number, release_date_year, release_date_month, release_date_day) 
-values (25, 1, 'LGA 1200', 'LGA1200', 2020, 5, 27);
+values (25, 1, 'LGA 1151', 'LGA1151', 2015, 9, 1);
+
+insert into pc_component (pc_component_id, brand_id, name, model_number, release_date_year, release_date_month, release_date_day) 
+values (26, 1, 'LGA 1200', 'LGA1200', 2020, 5, 27);

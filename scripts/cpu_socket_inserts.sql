@@ -68,7 +68,10 @@ insert into cpu_socket (cpu_socket_id, pc_component_id, socket_type_id, contacts
 values (23, 23, 4, 1150);
 
 insert into cpu_socket (cpu_socket_id, pc_component_id, socket_type_id, contacts) 
-values (24, 24, 4, 1151);
+values (24, 24, 4, 2011);
 
 insert into cpu_socket (cpu_socket_id, pc_component_id, socket_type_id, contacts) 
-values (25, 25, 4, 1200);
+values (25, 25, 4, 1151);
+
+insert into cpu_socket (cpu_socket_id, pc_component_id, socket_type_id, contacts) 
+values (26, 26, 4, 1200);
