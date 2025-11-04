@@ -21,8 +21,8 @@ DROP TABLE IF EXISTS `pc_hardware_catalog`.`brand` ;
 
 CREATE TABLE IF NOT EXISTS `pc_hardware_catalog`.`brand` (
   `brand_id` INT NOT NULL AUTO_INCREMENT,
-  `short_name` VARCHAR(10) NOT NULL,
-  `long_name` VARCHAR(45) NULL,
+  `short_name` VARCHAR(30) NOT NULL,
+  `long_name` VARCHAR(90) NULL,
   `url` VARCHAR(320) NULL,
   PRIMARY KEY (`brand_id`),
   UNIQUE INDEX `brand_name_UNIQUE` (`short_name` ASC) VISIBLE,
@@ -362,3 +362,51 @@ ENGINE = InnoDB;
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+
+-- -----------------------------------------------------
+-- Data for table `pc_hardware_catalog`.`brand`
+-- -----------------------------------------------------
+START TRANSACTION;
+USE `pc_hardware_catalog`;
+INSERT INTO `pc_hardware_catalog`.`brand` (`brand_id`, `short_name`, `long_name`, `url`) VALUES (2, 'Intel', NULL, NULL);
+INSERT INTO `pc_hardware_catalog`.`brand` (`brand_id`, `short_name`, `long_name`, `url`) VALUES (3, 'AMD', NULL, NULL);
+INSERT INTO `pc_hardware_catalog`.`brand` (`brand_id`, `short_name`, `long_name`, `url`) VALUES (4, 'ATI', NULL, NULL);
+INSERT INTO `pc_hardware_catalog`.`brand` (`brand_id`, `short_name`, `long_name`, `url`) VALUES (5, 'Seagate', NULL, NULL);
+INSERT INTO `pc_hardware_catalog`.`brand` (`brand_id`, `short_name`, `long_name`, `url`) VALUES (6, 'Western Digital', NULL, NULL);
+INSERT INTO `pc_hardware_catalog`.`brand` (`brand_id`, `short_name`, `long_name`, `url`) VALUES (7, 'Gateway 2000', NULL, NULL);
+INSERT INTO `pc_hardware_catalog`.`brand` (`brand_id`, `short_name`, `long_name`, `url`) VALUES (8, 'Creative Labs', NULL, NULL);
+INSERT INTO `pc_hardware_catalog`.`brand` (`brand_id`, `short_name`, `long_name`, `url`) VALUES (9, 'MusicQuest', NULL, NULL);
+INSERT INTO `pc_hardware_catalog`.`brand` (`brand_id`, `short_name`, `long_name`, `url`) VALUES (10, 'Roland', NULL, NULL);
+INSERT INTO `pc_hardware_catalog`.`brand` (`brand_id`, `short_name`, `long_name`, `url`) VALUES (11, 'Asus', NULL, NULL);
+INSERT INTO `pc_hardware_catalog`.`brand` (`brand_id`, `short_name`, `long_name`, `url`) VALUES (1, 'Fairfield Semiconductor', 'Fairfield Semiconductor International, Inc.', NULL);
+
+COMMIT;
+
+
+-- -----------------------------------------------------
+-- Data for table `pc_hardware_catalog`.`ram_type`
+-- -----------------------------------------------------
+START TRANSACTION;
+USE `pc_hardware_catalog`;
+INSERT INTO `pc_hardware_catalog`.`ram_type` (`ram_type_id`, `name`) VALUES (DEFAULT, 'DDR');
+INSERT INTO `pc_hardware_catalog`.`ram_type` (`ram_type_id`, `name`) VALUES (DEFAULT, 'DDR2');
+INSERT INTO `pc_hardware_catalog`.`ram_type` (`ram_type_id`, `name`) VALUES (DEFAULT, 'DDR3');
+INSERT INTO `pc_hardware_catalog`.`ram_type` (`ram_type_id`, `name`) VALUES (DEFAULT, 'DDR4');
+
+COMMIT;
+
+
+-- -----------------------------------------------------
+-- Data for table `pc_hardware_catalog`.`expansion_slot_type`
+-- -----------------------------------------------------
+START TRANSACTION;
+USE `pc_hardware_catalog`;
+INSERT INTO `pc_hardware_catalog`.`expansion_slot_type` (`expansion_slot_type_id`, `name`) VALUES (DEFAULT, '8-bit ISA');
+INSERT INTO `pc_hardware_catalog`.`expansion_slot_type` (`expansion_slot_type_id`, `name`) VALUES (DEFAULT, '16-bit ISA');
+INSERT INTO `pc_hardware_catalog`.`expansion_slot_type` (`expansion_slot_type_id`, `name`) VALUES (DEFAULT, 'PCI');
+INSERT INTO `pc_hardware_catalog`.`expansion_slot_type` (`expansion_slot_type_id`, `name`) VALUES (DEFAULT, 'AGP');
+INSERT INTO `pc_hardware_catalog`.`expansion_slot_type` (`expansion_slot_type_id`, `name`) VALUES (DEFAULT, 'Media Bus');
+INSERT INTO `pc_hardware_catalog`.`expansion_slot_type` (`expansion_slot_type_id`, `name`) VALUES (DEFAULT, 'PCI Express');
+
+COMMIT;
+
