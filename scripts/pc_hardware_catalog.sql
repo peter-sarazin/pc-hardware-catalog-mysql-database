@@ -76,7 +76,7 @@ CREATE TABLE IF NOT EXISTS `pc_hardware_catalog`.`cpu_socket` (
   `cpu_socket_id` INT NOT NULL AUTO_INCREMENT,
   `pc_component_id` INT NOT NULL,
   `socket_type_id` INT NOT NULL,
-  `pin_count` SMALLINT(5) NULL,
+  `contacts` SMALLINT(5) NULL,
   PRIMARY KEY (`cpu_socket_id`),
   INDEX `fk_cpu_socket_pc_component1_idx` (`pc_component_id` ASC) VISIBLE,
   INDEX `fk_cpu_socket_socket_type1_idx` (`socket_type_id` ASC) VISIBLE,
